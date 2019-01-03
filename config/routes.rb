@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :videos, only: [:index, :update]
+      resources :videos, only: [:index, :update, :create]
     end
   end
 
