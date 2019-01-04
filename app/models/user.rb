@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_one :playlists
+  has_one :playlist
 end

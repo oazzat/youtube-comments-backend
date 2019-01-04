@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :playlists, only: [:index, :update]
+      resources :playlists, only: [:index, :update, :create]
     end
   end
 
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :playlistvideos, only: [:index, :update]
+      resources :playlistvideos, only: [:index, :update, :create, :destroy, :show]
     end
   end
 
