@@ -11,6 +11,7 @@ class Api::V1::UsersController < ApplicationController
     @playlist = Playlist.create(name: @user.name, user_id: @user.id )
     @user.playlist_id = @playlist.id
     @user.save
+    
     render json: @user
   end
 
